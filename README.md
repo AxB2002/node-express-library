@@ -37,7 +37,7 @@ Node Express Library is a web application built with Node.js and Express.js fram
 
 ## Credits
 
-This project is created by [Your Name]. Feel free to contribute by submitting bug reports, feature requests, or pull requests.
+This project is created by AxB2002. Feel free to contribute by submitting bug reports, feature requests, or pull requests.
 
 ## License
 
