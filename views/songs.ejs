@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste des Chansons</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      /* Importation de la police de caractères Rock Salt depuis Google Fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+      /* Style pour le titre */
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Rock Salt", cursive; /* Utilisation de la police Rock Salt */
+      }
+
+      /* Style pour le conteneur */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Style pour la table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      /* Style pour l'en-tête de la table */
+      th {
+        background-color: #f2f2f2;
+        padding: 15px 20px;
+        text-align: center; /* Centrer le texte */
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #ddd;
+        vertical-align: middle;
+      }
+
+      /* Style pour les lignes impaires */
+      tr:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+
+      /* Style pour les cellules de la table */
+      td {
+        padding: 10px 20px;
+        vertical-align: middle;
+      }
+
+      /* Style pour les liens */
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      /* Style pour les liens au survol */
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inclusion du menu de navigation -->
+    <%- include('header') %>
+
+    <div class="container">
+      <h1>Liste des Chansons</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Titre</th>
+            <th>Artiste</th>
+            <th>Année</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% songs.forEach(song => { %>
+          <tr>
+            <td><a href="#"><%= song.titre %></a></td>
+            <td><%= song.artiste %></td>
+            <td><%= song.annee %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

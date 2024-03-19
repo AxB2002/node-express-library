@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "6393488166d2ef3ac18034aa"
+  },
+  "titre": "Comfortably Numb",
+  "artiste": "Pink Floyd",
+  "annee": "1980"
+},{
+  "_id": {
+    "$oid": "6393663866d2ef3ac18034b3"
+  },
+  "titre": "Anti-Hero",
+  "artiste": "Taylor Swift",
+  "annee": "2022"
+},{
+  "_id": {
+    "$oid": "6393666166d2ef3ac18034b4"
+  },
+  "titre": "Crazy in Love",
+  "artiste": "Beyonce",
+  "annee": "2003"
+},{
+  "_id": {
+    "$oid": "6393669266d2ef3ac18034b5"
+  },
+  "titre": "Paperback Writer",
+  "artiste": "The Beatles",
+  "annee": "1966"
+},{
+  "_id": {
+    "$oid": "639366b866d2ef3ac18034b6"
+  },
+  "titre": "Black Dog",
+  "artiste": "Led Zeppelin",
+  "annee": "1971"
+},{
+  "_id": {
+    "$oid": "639366d866d2ef3ac18034b7"
+  },
+  "titre": "Je Joue de la Guitare",
+  "artiste": "Jean Leloup",
+  "annee": "1998"
+}]
